@@ -1,15 +1,16 @@
 import { SectionWrapper } from "./SectionWrapper";
-import type { SkillCategory } from "../data/resume";
+import type { SkillCategory, CertificateEntry } from "../data/resume";
 
 interface SkillsProps {
   categories: SkillCategory[];
+  certificates: CertificateEntry[];
 }
 
-export function Skills({ categories }: SkillsProps) {
+export function Skills({ categories, certificates }: SkillsProps) {
   return (
     <SectionWrapper id="skills" className="bg-gray-50/60">
       <h2 className="mb-10 text-2xl font-bold text-gray-900 md:text-3xl">
-        Skills &amp; Technologies
+        Skills &amp; Certificates
       </h2>
 
       <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
@@ -31,6 +32,26 @@ export function Skills({ categories }: SkillsProps) {
           </div>
         ))}
       </div>
+
+      {certificates.length > 0 && (
+        <>
+          <h3 className="mt-12 mb-6 text-sm font-semibold tracking-wide text-gray-500 uppercase">
+            Certificates
+          </h3>
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {certificates.map((cert) => (
+              <div
+                key={cert.id}
+                className="rounded-xl border border-gray-200 bg-white p-5 transition-colors hover:border-accent-300"
+              >
+                <p className="font-semibold text-gray-900">{cert.name}</p>
+                <p className="mt-1 text-sm text-gray-500">{cert.issuer}</p>
+                <p className="mt-1 text-xs text-gray-400">{cert.date}</p>
+              </div>
+            ))}
+          </div>
+        </>
+      )}
     </SectionWrapper>
   );
 }

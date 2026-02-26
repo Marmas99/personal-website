@@ -8,7 +8,7 @@ import { Contact } from "./components/Contact";
 import { Footer } from "./components/Footer";
 
 export default function App() {
-  const { personal, experience, skills, education } = resumeData;
+  const { personal, experience, skills, certificates, education } = resumeData;
 
   return (
     <div className="min-h-screen bg-white text-gray-900">
@@ -17,7 +17,7 @@ export default function App() {
       <main>
         <Hero personal={personal} />
         <Experience entries={experience} />
-        <Skills categories={skills} />
+        <Skills categories={skills} certificates={certificates} />
         <Education entries={education} />
         <Contact />
       </main>

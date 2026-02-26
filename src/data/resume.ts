@@ -45,10 +45,18 @@ export interface EducationEntry {
   description?: string;
 }
 
+export interface CertificateEntry {
+  id: string;
+  name: string;
+  issuer: string;
+  date: string;
+}
+
 export interface ResumeData {
   personal: PersonalInfo;
   experience: ExperienceEntry[];
   skills: SkillCategory[];
+  certificates: CertificateEntry[];
   education: EducationEntry[];
 }
 
@@ -118,6 +126,15 @@ export const resumeData: ResumeData = {
     { id: "sk-practices", name: "Practices", skills: ["Agile / Scrum", "Code Review",] },
     { id: "sk-ai", name: "AI & ML", skills: ["GitHub Copilot", "Agentic driven development", "Agent Skills"] },
     { id: "sk-cloud", name: "AWS Cloud", skills: ["Lambda", "DynamoDB", "RDS", "API Gateway"] }, 
+  ],
+
+  certificates: [
+    {
+      id: "cert-1",
+      name: "AWS Cloud Practitioner",
+      issuer: "Amazon Web Services",
+      date: "2023",
+    },
   ],
 
   education: [

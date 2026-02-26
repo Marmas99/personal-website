@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { FiMenu, FiX } from "react-icons/fi";
+import { FiDownload, FiMenu, FiX } from "react-icons/fi";
+import { resumeData } from "../data/resume";
 
 const NAV_LINKS = [
   { label: "About", href: "#about" },
@@ -34,6 +35,18 @@ export function Header({ name }: { name: string }) {
               </a>
             </li>
           ))}
+          {resumeData.personal.resumeUrl && (
+            <li>
+              <a
+                href={resumeData.personal.resumeUrl}
+                download
+                className="inline-flex items-center gap-1.5 text-sm font-medium text-gray-600 transition-colors hover:text-accent-600"
+              >
+                <FiDownload size={14} />
+                Resume
+              </a>
+            </li>
+          )}
         </ul>
 
         <button
@@ -60,6 +73,19 @@ export function Header({ name }: { name: string }) {
               </a>
             </li>
           ))}
+          {resumeData.personal.resumeUrl && (
+            <li>
+              <a
+                href={resumeData.personal.resumeUrl}
+                download
+                className="flex items-center gap-2 py-3 text-sm font-medium text-gray-600 transition-colors hover:text-accent-600"
+                onClick={() => setMenuOpen(false)}
+              >
+                <FiDownload size={14} />
+                Resume
+              </a>
+            </li>
+          )}
         </ul>
       )}
     </header>

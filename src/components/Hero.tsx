@@ -1,4 +1,4 @@
-import { FiArrowDown, FiMail } from "react-icons/fi";
+import { FiArrowDown, FiDownload, FiMail } from "react-icons/fi";
 import type { PersonalInfo } from "../data/resume";
 
 interface HeroProps {
@@ -34,10 +34,10 @@ export function Hero({ personal }: HeroProps) {
         {personal.resumeUrl && (
           <a
             href={personal.resumeUrl}
-            target="_blank"
-            rel="noopener noreferrer"
+            download
             className="inline-flex items-center gap-2 rounded-lg border border-gray-200 px-6 py-3 text-sm font-medium text-gray-700 transition-colors hover:bg-gray-50"
           >
+            <FiDownload size={16} />
             Download Resume
           </a>
         )}

@@ -76,6 +76,7 @@ export const resumeData: ResumeData = {
       { label: "LinkedIn", url: "https://linkedin.com/in/markus-masalkovski", icon: "linkedin" },
       { label: "Email", url: "mailto:markus.masalkovski@gmail.com", icon: "email" },
     ],
+    resumeUrl: "/personal-website/resume.pdf",
   },
 
   experience: [

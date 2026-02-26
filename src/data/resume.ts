@@ -73,7 +73,7 @@ export const resumeData: ResumeData = {
     location: "Sweden",
     socialLinks: [
       { label: "GitHub", url: "https://github.com/marmas99", icon: "github" },
-      { label: "LinkedIn", url: "https://linkedin.com/in/markus-masalkovski", icon: "linkedin" },
+      { label: "LinkedIn", url: "https://www.linkedin.com/in/markus-masalkovski-b94095209/", icon: "linkedin" },
       { label: "Email", url: "mailto:markus.masalkovski@gmail.com", icon: "email" },
     ],
     resumeUrl: "/personal-website/resume.pdf",

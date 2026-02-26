@@ -64,7 +64,7 @@ export const resumeData: ResumeData = {
   personal: {
     name: "Markus Masalkovski",
     title: "Software Developer",
-    tagline: "Enthusiastic developer with focus on AI-driven development",
+    tagline: "Enthusiastic developer with one eye on the future",
     about:
       "System developer with a passion for cloud and AI. " +
       "Knowledgeable with serverless systems in AWS and programming languages such as GO, Typescript and Python. " +

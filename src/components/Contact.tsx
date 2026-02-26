@@ -24,7 +24,7 @@ async function submitContact(
 
   const subject = encodeURIComponent(`Contact from ${name}`);
   const body = encodeURIComponent(`From: ${name} (${email})\n\n${message}`);
-  window.location.href = `mailto:hello@example.com?subject=${subject}&body=${body}`;
+  window.location.href = `mailto:markus.masalkovski@gmail.com?subject=${subject}&body=${body}`;
 
   return { status: "success", message: "Opening your email client\u2026" };
 }

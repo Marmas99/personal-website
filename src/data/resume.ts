@@ -123,7 +123,7 @@ export const resumeData: ResumeData = {
   skills: [
     { id: "sk-lang", name: "Languages", skills: ["Go", "TypeScript", "React", "C#", "SQL"] },
     { id: "sk-be", name: "Cloud", skills: ["AWS", "Serverless", "REST APIs", "GraphQL"] },
-    { id: "sk-tools", name: "Tools & DevOps", skills: ["Git", "Docker", "GitHub Actions", "CI/CD", "Kafka"] },
+    { id: "sk-tools", name: "Tools & DevOps", skills: ["Git", "Docker", "GitHub Actions", "CI/CD", "Kafka", "Automatic Testing",] },
     { id: "sk-practices", name: "Practices", skills: ["Agile / Scrum", "Code Review",] },
     { id: "sk-ai", name: "AI & ML", skills: ["GitHub Copilot", "Agentic driven development", "Agent Skills"] },
     { id: "sk-cloud", name: "AWS Cloud", skills: ["Lambda", "DynamoDB", "RDS", "API Gateway"] }, 

@@ -67,7 +67,7 @@ export const resumeData: ResumeData = {
     tagline: "Enthusiastic developer with one eye on the future",
     about:
       "System developer with a passion for cloud and AI. " +
-      "Knowledgeable with serverless systems in AWS and programming languages such as GO, Typescript and Python. " +
+      "Knowledgeable with serverless systems in AWS and programming languages such as GO, Typescript and C#. " +
       "Loves new challenges and learning new things.",
     email: "markus.masalkovski@gmail.com",
     location: "Sweden",
